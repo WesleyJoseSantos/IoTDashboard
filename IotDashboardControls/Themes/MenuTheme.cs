@@ -13,10 +13,7 @@ namespace IotDashboardControls.Themes
     {
         public Color HeaderColor { get; set; }
         public Color MenuColor { get; set; }
-        public Color ItemColor { get; set; }
-        public Color ItemColorOnEnter { get; set; }
-        public Color ItemColorOnClick { get; set; }
-        public Color SelectedItemColor { get; set; }
+
         public MenuTheme()
         {
             InitializeComponent();

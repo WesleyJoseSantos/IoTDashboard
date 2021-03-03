@@ -1,5 +1,4 @@
-﻿using IotDashboard.Controls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -7,24 +6,25 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace IoTDashboard.Components
+namespace IotDashboardControls.Themes
 {
-    public partial class WindowTheme : Component
+    public partial class ButtonTheme : Component
     {
-        public Color BackgroudColor { get; set; }
+        public Color Color { get; set; }
+        public Color ColorOnEnter { get; set; }
+        public Color ColorOnClick { get; set; }
 
-        public WindowTheme()
+        public ButtonTheme()
         {
             InitializeComponent();
         }
 
-        public WindowTheme(IContainer container)
+        public ButtonTheme(IContainer container)
         {
             container.Add(this);
+
             InitializeComponent();
         }
-
     }
 }

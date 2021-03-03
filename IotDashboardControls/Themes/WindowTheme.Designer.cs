@@ -31,16 +31,24 @@ namespace IoTDashboard.Components
         {
             this.components = new System.ComponentModel.Container();
             this.TextTheme = new IoTDashboard.Components.TextTheme(this.components);
+            this.ButtonTheme = new IotDashboardControls.Themes.ButtonTheme(this.components);
             // 
             // TextTheme
             // 
             this.TextTheme.TextColor = System.Drawing.Color.Empty;
             this.TextTheme.TextFont = null;
+            // 
+            // ButtonTheme
+            // 
+            this.ButtonTheme.Color = System.Drawing.Color.Empty;
+            this.ButtonTheme.ColorOnClick = System.Drawing.Color.Empty;
+            this.ButtonTheme.ColorOnEnter = System.Drawing.Color.Empty;
 
         }
 
         #endregion
 
         public TextTheme TextTheme;
+        public IotDashboardControls.Themes.ButtonTheme ButtonTheme;
     }
 }
