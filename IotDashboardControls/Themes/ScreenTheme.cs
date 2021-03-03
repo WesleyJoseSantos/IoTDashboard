@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace IoTDashboard.Components
 {
+    [ToolboxItem(false)]
     public partial class ScreenTheme : Component
     {
         public Color BackgroundColor { get; set; }

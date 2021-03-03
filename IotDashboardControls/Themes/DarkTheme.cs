@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace IotDashboardControls.Themes
 {
+    [ToolboxItem(true)]
     public partial class DarkTheme : IoTDashboard.Components.Theme
     {
         public DarkTheme()

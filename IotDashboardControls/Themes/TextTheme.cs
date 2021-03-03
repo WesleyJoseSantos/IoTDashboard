@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace IoTDashboard.Components
 {
+    [ToolboxItem(false)]
     public partial class TextTheme : Component
     {
         public Color TextColor { get; set; }

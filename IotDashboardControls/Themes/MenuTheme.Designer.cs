@@ -49,6 +49,6 @@ namespace IotDashboardControls.Themes
         #endregion
 
         public IoTDashboard.Components.TextTheme TextTheme;
-        private ButtonTheme ButtonTheme;
+        public ButtonTheme ButtonTheme;
     }
 }

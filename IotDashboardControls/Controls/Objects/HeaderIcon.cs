@@ -10,12 +10,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IotDashboard.Controls
+namespace IotDashboard.Controls.Objects
 {
+    [ToolboxItem(false)]
     public partial class HeaderIcon : PictureBox, INewControl
     {
-        private Theme theme;
-
         public Theme Theme { get; set; }
 
         public HeaderIcon()

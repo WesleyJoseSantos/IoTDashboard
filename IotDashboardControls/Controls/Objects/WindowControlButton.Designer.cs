@@ -1,5 +1,5 @@
 ﻿
-namespace IotDashboard.Controls
+namespace IotDashboard.Controls.Objects
 {
     partial class WindowControlButton
     {

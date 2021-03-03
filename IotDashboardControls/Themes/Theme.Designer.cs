@@ -68,6 +68,6 @@ namespace IoTDashboard.Components
         public TextTheme TextTheme;
         public WindowTheme WindowTheme;
         public IotDashboardControls.Themes.MenuTheme MenuTheme;
-        private IotDashboardControls.Themes.ButtonTheme ButtonTheme;
+        public IotDashboardControls.Themes.ButtonTheme ButtonTheme;
     }
 }

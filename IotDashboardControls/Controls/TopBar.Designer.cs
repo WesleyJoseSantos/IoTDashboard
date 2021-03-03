@@ -1,4 +1,5 @@
 ﻿
+using IotDashboard.Controls.Objects;
 using IotDashboard.Controls;
 
 namespace IoTDashboard.Controls
@@ -31,11 +32,11 @@ namespace IoTDashboard.Controls
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonMin = new IotDashboard.Controls.WindowControlButton();
-            this.buttonMax = new IotDashboard.Controls.WindowControlButton();
-            this.buttonClose = new IotDashboard.Controls.WindowControlButton();
-            this.headerText = new IotDashboard.Controls.HeaderText();
-            this.headerIcon = new IotDashboard.Controls.HeaderIcon();
+            this.buttonMin = new IotDashboard.Controls.Objects.WindowControlButton();
+            this.buttonMax = new IotDashboard.Controls.Objects.WindowControlButton();
+            this.buttonClose = new IotDashboard.Controls.Objects.WindowControlButton();
+            this.headerText = new IotDashboard.Controls.Objects.HeaderText();
+            this.headerIcon = new IotDashboard.Controls.Objects.HeaderIcon();
             ((System.ComponentModel.ISupportInitialize)(this.headerIcon)).BeginInit();
             this.SuspendLayout();
             // 

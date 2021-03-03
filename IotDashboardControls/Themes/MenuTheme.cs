@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace IotDashboardControls.Themes
 {
+    [ToolboxItem(false)]
     public partial class MenuTheme : Component
     {
         public Color HeaderColor { get; set; }

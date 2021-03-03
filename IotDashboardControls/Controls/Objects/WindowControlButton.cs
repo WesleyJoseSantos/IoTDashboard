@@ -10,8 +10,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IotDashboard.Controls
+namespace IotDashboard.Controls.Objects
 {
+    [ToolboxItem(false)]
     public partial class WindowControlButton : Label, INewControl
     {
         private Theme theme;

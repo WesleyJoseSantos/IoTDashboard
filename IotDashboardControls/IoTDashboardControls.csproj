@@ -42,16 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\HeaderIcon.cs">
+    <Compile Include="Controls\Objects\HeaderIcon.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\HeaderIcon.Designer.cs">
+    <Compile Include="Controls\Objects\HeaderIcon.Designer.cs">
       <DependentUpon>HeaderIcon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\HeaderText.cs">
+    <Compile Include="Controls\Objects\HeaderText.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\HeaderText.Designer.cs">
+    <Compile Include="Controls\Objects\HeaderText.Designer.cs">
       <DependentUpon>HeaderText.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Menu.cs">
@@ -114,17 +114,11 @@
     <Compile Include="Controls\TopBar.Designer.cs">
       <DependentUpon>TopBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controls\WindowControlButton.cs">
+    <Compile Include="Controls\Objects\WindowControlButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\WindowControlButton.Designer.cs">
+    <Compile Include="Controls\Objects\WindowControlButton.Designer.cs">
       <DependentUpon>WindowControlButton.cs</DependentUpon>
     </Compile>
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
@@ -136,12 +130,15 @@
     <EmbeddedResource Include="Controls\TopBar.resx">
       <DependentUpon>TopBar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\WindowControlButton.resx">
+    <EmbeddedResource Include="Controls\Objects\WindowControlButton.resx">
       <DependentUpon>WindowControlButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\ButtonTheme.resx">
+      <DependentUpon>ButtonTheme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Themes\DarkTheme.resx">
       <DependentUpon>DarkTheme.cs</DependentUpon>

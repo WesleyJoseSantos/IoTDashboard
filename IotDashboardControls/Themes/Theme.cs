@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 namespace IoTDashboard.Components
 {
+    [ToolboxItem(false)]
     public partial class Theme : Component
     {
         public Theme()

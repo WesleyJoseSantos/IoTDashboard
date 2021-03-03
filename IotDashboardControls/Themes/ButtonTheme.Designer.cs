@@ -29,9 +29,18 @@ namespace IotDashboardControls.Themes
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();
+            this.TextTheme = new IoTDashboard.Components.TextTheme(this.components);
+            // 
+            // TextTheme
+            // 
+            this.TextTheme.TextColor = System.Drawing.Color.Empty;
+            this.TextTheme.TextFont = null;
+
         }
 
         #endregion
+
+        public IoTDashboard.Components.TextTheme TextTheme;
     }
 }

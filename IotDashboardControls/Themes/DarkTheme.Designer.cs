@@ -47,6 +47,12 @@ namespace IotDashboardControls.Themes
             // 
             this.MenuTheme.HeaderColor = System.Drawing.Color.White;
             this.MenuTheme.MenuColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            // 
+            // ButtonTheme
+            // 
+            this.ButtonTheme.Color = System.Drawing.Color.Gray;
+            this.ButtonTheme.ColorOnClick = System.Drawing.Color.DarkGray;
+            this.ButtonTheme.ColorOnEnter = System.Drawing.Color.Silver;
 
         }
 

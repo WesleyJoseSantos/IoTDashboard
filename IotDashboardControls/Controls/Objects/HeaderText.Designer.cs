@@ -1,7 +1,7 @@
 ﻿
-namespace IotDashboard.Controls
+namespace IotDashboard.Controls.Objects
 {
-    partial class HeaderIcon
+    partial class HeaderText
     {
         /// <summary> 
         /// Variável de designer necessária.

@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace IoTDashboard.Components
 {
+    [ToolboxItem(false)]
     public partial class WindowTheme : Component
     {
         public Color BackgroudColor { get; set; }
