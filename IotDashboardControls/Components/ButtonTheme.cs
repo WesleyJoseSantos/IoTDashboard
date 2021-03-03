@@ -6,26 +6,26 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace IoTDashboard.Components
+namespace IoTDashboardControls.Components
 {
     [ToolboxItem(false)]
-    public partial class TextTheme : Component
+    public partial class ButtonTheme : Component
     {
-        public Color TextColor { get; set; }
-        public Font TextFont { get; set; }
+        public Color Color { get; set; }
+        public Color ColorOnEnter { get; set; }
+        public Color ColorOnClick { get; set; }
 
-        public TextTheme()
+        public ButtonTheme()
         {
             InitializeComponent();
         }
 
-        public TextTheme(IContainer container)
+        public ButtonTheme(IContainer container)
         {
             container.Add(this);
+
             InitializeComponent();
         }
-
     }
 }

@@ -1,5 +1,5 @@
-﻿using IoTDashboard.Components;
-using IotDashboardControls.Interfaces;
+﻿using IoTDashboardControls.Components;
+using IoTDashboardControls.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

@@ -6,25 +6,26 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace IotDashboardControls.Themes
+namespace IoTDashboardControls.Components
 {
     [ToolboxItem(false)]
-    public partial class MenuTheme : Component
+    public partial class TextTheme : Component
     {
-        public Color HeaderColor { get; set; }
-        public Color MenuColor { get; set; }
+        public Color TextColor { get; set; }
+        public Font TextFont { get; set; }
 
-        public MenuTheme()
+        public TextTheme()
         {
             InitializeComponent();
         }
 
-        public MenuTheme(IContainer container)
+        public TextTheme(IContainer container)
         {
             container.Add(this);
-
             InitializeComponent();
         }
+
     }
 }

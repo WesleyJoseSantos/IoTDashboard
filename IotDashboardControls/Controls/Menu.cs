@@ -1,5 +1,5 @@
-﻿using IoTDashboard.Components;
-using IotDashboardControls.Interfaces;
+﻿using IoTDashboardControls.Components;
+using IoTDashboardControls.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IotDashboardControls.Controls
+namespace IoTDashboardControls.Controls
 {
     public partial class Menu : UserControl, INewControl
     {

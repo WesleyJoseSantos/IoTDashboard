@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CBF64870-51DC-494C-98F4-96185C1E9FA1}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>IotDashboardControls</RootNamespace>
-    <AssemblyName>IotDashboardControls</AssemblyName>
+    <RootNamespace>IoTDashboardControls</RootNamespace>
+    <AssemblyName>IoTDashboardControls</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,6 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\MenuTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\MenuTheme.Designer.cs">
+      <DependentUpon>MenuTheme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Objects\HeaderIcon.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -66,46 +72,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Themes\ButtonTheme.cs">
+    <Compile Include="Components\ButtonTheme.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Themes\ButtonTheme.Designer.cs">
+    <Compile Include="Components\ButtonTheme.Designer.cs">
       <DependentUpon>ButtonTheme.cs</DependentUpon>
     </Compile>
-    <Compile Include="Themes\DarkTheme.cs">
+    <Compile Include="Components\DarkTheme.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Themes\DarkTheme.Designer.cs">
+    <Compile Include="Components\DarkTheme.Designer.cs">
       <DependentUpon>DarkTheme.cs</DependentUpon>
     </Compile>
-    <Compile Include="Themes\MenuTheme.cs">
+    <Compile Include="Components\ScreenTheme.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Themes\MenuTheme.Designer.cs">
-      <DependentUpon>MenuTheme.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Themes\ScreenTheme.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Themes\ScreenTheme.Designer.cs">
+    <Compile Include="Components\ScreenTheme.Designer.cs">
       <DependentUpon>ScreenTheme.cs</DependentUpon>
     </Compile>
-    <Compile Include="Themes\TextTheme.cs">
+    <Compile Include="Components\TextTheme.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Themes\TextTheme.Designer.cs">
+    <Compile Include="Components\TextTheme.Designer.cs">
       <DependentUpon>TextTheme.cs</DependentUpon>
     </Compile>
-    <Compile Include="Themes\Theme.cs">
+    <Compile Include="Components\Theme.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Themes\Theme.Designer.cs">
+    <Compile Include="Components\Theme.Designer.cs">
       <DependentUpon>Theme.cs</DependentUpon>
     </Compile>
-    <Compile Include="Themes\WindowTheme.cs">
+    <Compile Include="Components\WindowTheme.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Themes\WindowTheme.Designer.cs">
+    <Compile Include="Components\WindowTheme.Designer.cs">
       <DependentUpon>WindowTheme.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\TopBar.cs">
@@ -124,6 +124,9 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Components\MenuTheme.resx">
+      <DependentUpon>MenuTheme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,22 +140,19 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Themes\ButtonTheme.resx">
+    <EmbeddedResource Include="Components\ButtonTheme.resx">
       <DependentUpon>ButtonTheme.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Themes\DarkTheme.resx">
+    <EmbeddedResource Include="Components\DarkTheme.resx">
       <DependentUpon>DarkTheme.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Themes\MenuTheme.resx">
-      <DependentUpon>MenuTheme.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Themes\ScreenTheme.resx">
+    <EmbeddedResource Include="Components\ScreenTheme.resx">
       <DependentUpon>ScreenTheme.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Themes\Theme.resx">
+    <EmbeddedResource Include="Components\Theme.resx">
       <DependentUpon>Theme.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Themes\WindowTheme.resx">
+    <EmbeddedResource Include="Components\WindowTheme.resx">
       <DependentUpon>WindowTheme.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

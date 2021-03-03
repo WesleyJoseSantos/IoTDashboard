@@ -1,7 +1,7 @@
 ﻿
-namespace IotDashboardControls.Themes
+namespace IoTDashboardControls.Components
 {
-    partial class ButtonTheme
+    partial class MenuTheme
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -30,17 +30,25 @@ namespace IotDashboardControls.Themes
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.TextTheme = new IoTDashboard.Components.TextTheme(this.components);
+            this.TextTheme = new IoTDashboardControls.Components.TextTheme(this.components);
+            this.ButtonTheme = new IoTDashboardControls.Components.ButtonTheme(this.components);
             // 
             // TextTheme
             // 
             this.TextTheme.TextColor = System.Drawing.Color.Empty;
             this.TextTheme.TextFont = null;
+            // 
+            // ButtonTheme
+            // 
+            this.ButtonTheme.Color = System.Drawing.Color.Empty;
+            this.ButtonTheme.ColorOnClick = System.Drawing.Color.Empty;
+            this.ButtonTheme.ColorOnEnter = System.Drawing.Color.Empty;
 
         }
 
         #endregion
 
-        public IoTDashboard.Components.TextTheme TextTheme;
+        public TextTheme TextTheme;
+        public ButtonTheme ButtonTheme;
     }
 }

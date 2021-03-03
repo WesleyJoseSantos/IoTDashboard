@@ -1,5 +1,5 @@
 ﻿
-namespace IotDashboardControls.Controls
+namespace IoTDashboardControls.Controls
 {
     partial class Menu
     {

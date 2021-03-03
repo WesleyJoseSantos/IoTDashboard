@@ -6,26 +6,25 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace IotDashboardControls.Themes
+namespace IoTDashboardControls.Components
 {
     [ToolboxItem(false)]
-    public partial class ButtonTheme : Component
+    public partial class ScreenTheme : Component
     {
-        public Color Color { get; set; }
-        public Color ColorOnEnter { get; set; }
-        public Color ColorOnClick { get; set; }
+        public Color BackgroundColor { get; set; }
 
-        public ButtonTheme()
+        public ScreenTheme()
         {
             InitializeComponent();
         }
 
-        public ButtonTheme(IContainer container)
+        public ScreenTheme(IContainer container)
         {
             container.Add(this);
-
             InitializeComponent();
         }
+
     }
 }

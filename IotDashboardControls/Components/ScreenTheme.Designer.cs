@@ -1,5 +1,5 @@
 ﻿
-namespace IoTDashboard.Components
+namespace IoTDashboardControls.Components
 {
     partial class ScreenTheme
     {
@@ -30,7 +30,7 @@ namespace IoTDashboard.Components
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.ButtonTheme = new IotDashboardControls.Themes.ButtonTheme(this.components);
+            this.ButtonTheme = new IoTDashboardControls.Components.ButtonTheme(this.components);
             // 
             // ButtonTheme
             // 
@@ -42,6 +42,6 @@ namespace IoTDashboard.Components
 
         #endregion
 
-        public IotDashboardControls.Themes.ButtonTheme ButtonTheme;
+        public IoTDashboardControls.Components.ButtonTheme ButtonTheme;
     }
 }

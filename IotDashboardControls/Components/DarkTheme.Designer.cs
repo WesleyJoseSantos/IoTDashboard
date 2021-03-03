@@ -1,5 +1,5 @@
 ﻿
-namespace IotDashboardControls.Themes
+namespace IoTDashboardControls.Components
 {
     partial class DarkTheme
     {
@@ -32,7 +32,7 @@ namespace IotDashboardControls.Themes
             // 
             // ScreenTheme
             // 
-            this.ScreenTheme.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.ScreenTheme.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             // 
             // TextTheme
             // 
@@ -45,14 +45,14 @@ namespace IotDashboardControls.Themes
             // 
             // MenuTheme
             // 
-            this.MenuTheme.HeaderColor = System.Drawing.Color.White;
-            this.MenuTheme.MenuColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.MenuTheme.HeaderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.MenuTheme.MenuColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             // 
             // ButtonTheme
             // 
-            this.ButtonTheme.Color = System.Drawing.Color.Gray;
-            this.ButtonTheme.ColorOnClick = System.Drawing.Color.DarkGray;
-            this.ButtonTheme.ColorOnEnter = System.Drawing.Color.Silver;
+            this.ButtonTheme.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.ButtonTheme.ColorOnClick = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(97)))), ((int)(((byte)(152)))));
+            this.ButtonTheme.ColorOnEnter = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(151)))), ((int)(((byte)(234)))));
 
         }
 

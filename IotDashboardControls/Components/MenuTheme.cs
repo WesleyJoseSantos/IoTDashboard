@@ -2,21 +2,25 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IotDashboardControls.Themes
+namespace IoTDashboardControls.Components
 {
     [ToolboxItem(true)]
-    public partial class DarkTheme : IoTDashboard.Components.Theme
+    public partial class MenuTheme : Component
     {
-        public DarkTheme()
+        public Color HeaderColor { get; set; }
+        public Color MenuColor { get; set; }
+
+        public MenuTheme()
         {
             InitializeComponent();
         }
 
-        public DarkTheme(IContainer container)
+        public MenuTheme(IContainer container)
         {
             container.Add(this);
 

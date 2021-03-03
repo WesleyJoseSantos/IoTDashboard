@@ -1,5 +1,5 @@
-﻿using IoTDashboard.Components;
-using IotDashboardControls.Interfaces;
+﻿using IoTDashboardControls.Components;
+using IoTDashboardControls.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace IoTDashboard.Controls
 {
@@ -33,6 +34,12 @@ namespace IoTDashboard.Controls
                 UpdateTheme();
             } 
         }
+
+        //Drag Form
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         public TopBar()
         {
@@ -64,6 +71,9 @@ namespace IoTDashboard.Controls
         {
             ParentForm.WindowState = ParentForm.WindowState == FormWindowState.Normal
                 ? FormWindowState.Maximized : FormWindowState.Normal;
+
+            buttonMax.Text = ParentForm.WindowState == FormWindowState.Normal
+                ? "1" : "2";
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
@@ -94,6 +104,12 @@ namespace IoTDashboard.Controls
         private void headerIcon_Click(object sender, EventArgs e)
         {
             headerIconOnClick?.Invoke();
+        }
+
+        private void TopBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Parent.Handle, 0x112, 0xf012, 0);
         }
     }
 }

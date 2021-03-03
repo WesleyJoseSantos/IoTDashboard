@@ -1,7 +1,7 @@
 ﻿
-namespace IoTDashboard.Components
+namespace IoTDashboardControls.Components
 {
-    partial class TextTheme
+    partial class ButtonTheme
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -29,9 +29,18 @@ namespace IoTDashboard.Components
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();
+            this.TextTheme = new IoTDashboardControls.Components.TextTheme(this.components);
+            // 
+            // TextTheme
+            // 
+            this.TextTheme.TextColor = System.Drawing.Color.Empty;
+            this.TextTheme.TextFont = null;
+
         }
 
         #endregion
+
+        public IoTDashboardControls.Components.TextTheme TextTheme;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IoTDashboard.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -8,22 +9,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IoTDashboard.Components
+namespace IoTDashboardControls.Components
 {
     [ToolboxItem(false)]
-    public partial class ScreenTheme : Component
+    public partial class WindowTheme : Component
     {
-        public Color BackgroundColor { get; set; }
-
-        public ScreenTheme()
+        public Color BackgroudColor { get; set; }
+        public WindowTheme()
         {
             InitializeComponent();
         }
 
-        public ScreenTheme(IContainer container)
+        public WindowTheme(IContainer container)
         {
             container.Add(this);
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
     }

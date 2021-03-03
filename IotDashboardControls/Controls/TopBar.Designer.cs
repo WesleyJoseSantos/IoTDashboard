@@ -94,6 +94,7 @@ namespace IoTDashboard.Controls
             this.headerText.Text = "Cabeçalho";
             this.headerText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.headerText.Theme = null;
+            this.headerText.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopBar_MouseDown);
             // 
             // headerIcon
             // 
@@ -125,6 +126,7 @@ namespace IoTDashboard.Controls
             this.Controls.Add(this.headerIcon);
             this.Name = "TopBar";
             this.Size = new System.Drawing.Size(587, 40);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopBar_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.headerIcon)).EndInit();
             this.ResumeLayout(false);
 
