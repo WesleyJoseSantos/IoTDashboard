@@ -54,17 +54,35 @@
     <Compile Include="Controls\HeaderText.Designer.cs">
       <DependentUpon>HeaderText.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\INewControl.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Themes\ButtonTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Themes\ButtonTheme.Designer.cs">
+      <DependentUpon>ButtonTheme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Themes\DarkTheme.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Themes\DarkTheme.Designer.cs">
       <DependentUpon>DarkTheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\MenuTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Themes\MenuTheme.Designer.cs">
+      <DependentUpon>MenuTheme.cs</DependentUpon>
     </Compile>
     <Compile Include="Themes\ScreenTheme.cs">
       <SubType>Component</SubType>
@@ -112,6 +130,9 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controls\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\TopBar.resx">
       <DependentUpon>TopBar.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Themes\DarkTheme.resx">
       <DependentUpon>DarkTheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\MenuTheme.resx">
+      <DependentUpon>MenuTheme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Themes\Theme.resx">
       <DependentUpon>Theme.cs</DependentUpon>
