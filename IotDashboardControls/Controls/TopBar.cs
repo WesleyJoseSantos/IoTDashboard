@@ -73,22 +73,22 @@ namespace IoTDashboard.Controls
 
         private void headerIcon_MouseEnter(object sender, EventArgs e)
         {
-            headerIcon.BackColor = Theme.WindowTheme.ButtonColorOnEnter;
+            headerIcon.BackColor = Theme.WindowTheme.ButtonTheme.ColorOnEnter;
         }
 
         private void headerIcon_MouseLeave(object sender, EventArgs e)
         {
-            headerIcon.BackColor = Theme.WindowTheme.ButtonColor;
+            headerIcon.BackColor = Theme.WindowTheme.ButtonTheme.Color;
         }
 
         private void headerIcon_MouseDown(object sender, MouseEventArgs e)
         {
-            headerIcon.BackColor = Theme.WindowTheme.ButtonColorOnClick;
+            headerIcon.BackColor = Theme.WindowTheme.ButtonTheme.ColorOnClick;
         }
 
         private void headerIcon_MouseUp(object sender, MouseEventArgs e)
         {
-            headerIcon.BackColor = Theme.WindowTheme.ButtonColor;
+            headerIcon.BackColor = Theme.WindowTheme.ButtonTheme.Color;
         }
 
         private void headerIcon_Click(object sender, EventArgs e)

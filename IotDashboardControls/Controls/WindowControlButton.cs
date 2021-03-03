@@ -23,7 +23,7 @@ namespace IotDashboard.Controls
             {
                 theme = value;
                 if (theme == null) return;
-                BackColor = theme.WindowTheme.ButtonColor;
+                BackColor = theme.WindowTheme.ButtonTheme.Color;
             }
         }
 
@@ -34,22 +34,22 @@ namespace IotDashboard.Controls
 
         private void WindowControlButton_MouseEnter(object sender, EventArgs e)
         {
-            BackColor = Theme.WindowTheme.ButtonColorOnEnter;
+            BackColor = Theme.WindowTheme.ButtonTheme.ColorOnEnter;
         }
 
         private void WindowControlButton_MouseLeave(object sender, EventArgs e)
         {
-            BackColor = Theme.WindowTheme.ButtonColor;
+            BackColor = Theme.WindowTheme.ButtonTheme.Color;
         }
 
         private void WindowControlButton_MouseDown(object sender, MouseEventArgs e)
         {
-            BackColor = Theme.WindowTheme.ButtonColorOnClick;
+            BackColor = Theme.WindowTheme.ButtonTheme.ColorOnClick;
         }
 
         private void WindowControlButton_MouseUp(object sender, MouseEventArgs e)
         {
-            BackColor = Theme.WindowTheme.ButtonColor;
+            BackColor = Theme.WindowTheme.ButtonTheme.Color;
         }
     }
 }
