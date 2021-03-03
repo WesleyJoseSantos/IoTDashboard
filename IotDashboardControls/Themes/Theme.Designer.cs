@@ -33,6 +33,7 @@ namespace IoTDashboard.Components
             this.ScreenTheme = new IoTDashboard.Components.ScreenTheme(this.components);
             this.TextTheme = new IoTDashboard.Components.TextTheme(this.components);
             this.WindowTheme = new IoTDashboard.Components.WindowTheme(this.components);
+            this.MenuTheme = new IotDashboardControls.Themes.MenuTheme(this.components);
             // 
             // ScreenTheme
             // 
@@ -45,9 +46,19 @@ namespace IoTDashboard.Components
             // 
             // WindowTheme
             // 
+            this.WindowTheme.BackgroudColor = System.Drawing.Color.Empty;
             this.WindowTheme.ButtonColor = System.Drawing.Color.Empty;
             this.WindowTheme.ButtonColorOnClick = System.Drawing.Color.Empty;
             this.WindowTheme.ButtonColorOnEnter = System.Drawing.Color.Empty;
+            // 
+            // MenuTheme
+            // 
+            this.MenuTheme.HeaderColor = System.Drawing.Color.Empty;
+            this.MenuTheme.ItemColor = System.Drawing.Color.Empty;
+            this.MenuTheme.ItemColorOnClick = System.Drawing.Color.Empty;
+            this.MenuTheme.ItemColorOnEnter = System.Drawing.Color.Empty;
+            this.MenuTheme.MenuColor = System.Drawing.Color.Empty;
+            this.MenuTheme.SelectedItemColor = System.Drawing.Color.Empty;
 
         }
 
@@ -56,5 +67,6 @@ namespace IoTDashboard.Components
         public ScreenTheme ScreenTheme;
         public TextTheme TextTheme;
         public WindowTheme WindowTheme;
+        public IotDashboardControls.Themes.MenuTheme MenuTheme;
     }
 }

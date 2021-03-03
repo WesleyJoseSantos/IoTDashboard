@@ -16,6 +16,7 @@ namespace IoTDashboard.Components
         public Color ButtonColor { get; set; }
         public Color ButtonColorOnEnter { get; set; }
         public Color ButtonColorOnClick { get; set; }
+
         public Color BackgroudColor { get; set; }
 
         public WindowTheme()
