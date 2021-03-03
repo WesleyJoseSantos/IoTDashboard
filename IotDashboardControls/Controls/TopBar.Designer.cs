@@ -106,6 +106,11 @@ namespace IoTDashboard.Controls
             this.headerIcon.TabIndex = 1;
             this.headerIcon.TabStop = false;
             this.headerIcon.Theme = null;
+            this.headerIcon.Click += new System.EventHandler(this.headerIcon_Click);
+            this.headerIcon.MouseDown += new System.Windows.Forms.MouseEventHandler(this.headerIcon_MouseDown);
+            this.headerIcon.MouseEnter += new System.EventHandler(this.headerIcon_MouseEnter);
+            this.headerIcon.MouseLeave += new System.EventHandler(this.headerIcon_MouseLeave);
+            this.headerIcon.MouseUp += new System.Windows.Forms.MouseEventHandler(this.headerIcon_MouseUp);
             // 
             // TopBar
             // 

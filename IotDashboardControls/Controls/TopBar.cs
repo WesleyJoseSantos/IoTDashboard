@@ -14,6 +14,10 @@ namespace IoTDashboard.Controls
 {
     public partial class TopBar : UserControl, INewControl
     {
+        public delegate void TopBarEvent();
+
+        public event TopBarEvent headerIconOnClick;
+
         private Theme theme;
 
         public string HeaderText {get => headerText.Text; set => headerText.Text = value;}
@@ -65,6 +69,31 @@ namespace IoTDashboard.Controls
         private void buttonClose_Click(object sender, EventArgs e)
         {
             ParentForm.Close();
+        }
+
+        private void headerIcon_MouseEnter(object sender, EventArgs e)
+        {
+            headerIcon.BackColor = Theme.WindowTheme.ButtonColorOnEnter;
+        }
+
+        private void headerIcon_MouseLeave(object sender, EventArgs e)
+        {
+            headerIcon.BackColor = Theme.WindowTheme.ButtonColor;
+        }
+
+        private void headerIcon_MouseDown(object sender, MouseEventArgs e)
+        {
+            headerIcon.BackColor = Theme.WindowTheme.ButtonColorOnClick;
+        }
+
+        private void headerIcon_MouseUp(object sender, MouseEventArgs e)
+        {
+            headerIcon.BackColor = Theme.WindowTheme.ButtonColor;
+        }
+
+        private void headerIcon_Click(object sender, EventArgs e)
+        {
+            headerIconOnClick?.Invoke();
         }
     }
 }
