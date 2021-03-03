@@ -30,8 +30,8 @@ namespace IoTDashboard
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.theme = new IotDashboardControls.Themes.DarkTheme(this.components);
             this.topBar1 = new IoTDashboard.Controls.TopBar();
+            this.darkTheme1 = new IoTDashboardControls.Components.DarkTheme(this.components);
             this.SuspendLayout();
             // 
             // topBar1
@@ -39,12 +39,12 @@ namespace IoTDashboard
             this.topBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.topBar1.Dock = System.Windows.Forms.DockStyle.Top;
             this.topBar1.HeaderIcon = global::IoTDashboard.Properties.Resources.menu_darkTheme;
-            this.topBar1.HeaderText = "Cabeçalho";
+            this.topBar1.HeaderText = "IoT Dashboard Viewer";
             this.topBar1.Location = new System.Drawing.Point(0, 0);
             this.topBar1.Name = "topBar1";
             this.topBar1.Size = new System.Drawing.Size(800, 40);
             this.topBar1.TabIndex = 0;
-            this.topBar1.Theme = this.theme;
+            this.topBar1.Theme = this.darkTheme1;
             // 
             // Form1
             // 
@@ -63,8 +63,9 @@ namespace IoTDashboard
         }
 
         #endregion
-        private IotDashboardControls.Themes.DarkTheme theme;
+
         private Controls.TopBar topBar1;
+        private IoTDashboardControls.Components.DarkTheme darkTheme1;
     }
 }
 

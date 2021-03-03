@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IoTDashboardInterfaces">
-      <HintPath>..\IoTDashboardInterfaces\bin\Debug\IoTDashboardInterfaces.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -84,13 +81,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\IotDashboardControls\IoTDashboardControls.csproj">
-      <Project>{CBF64870-51DC-494C-98F4-96185C1E9FA1}</Project>
-      <Name>IoTDashboardControls</Name>
-    </ProjectReference>
+    <None Include="Resources\menu_darkTheme.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\menu_darkTheme.png" />
+    <ProjectReference Include="..\IotDashboardControls\IoTDashboardControls.csproj">
+      <Project>{cbf64870-51dc-494c-98f4-96185c1e9fa1}</Project>
+      <Name>IoTDashboardControls</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
