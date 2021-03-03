@@ -149,6 +149,9 @@
     <EmbeddedResource Include="Themes\MenuTheme.resx">
       <DependentUpon>MenuTheme.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Themes\ScreenTheme.resx">
+      <DependentUpon>ScreenTheme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Themes\Theme.resx">
       <DependentUpon>Theme.cs</DependentUpon>
     </EmbeddedResource>
